@@ -376,7 +376,7 @@
     </extension>
 </addon>
 
-<addon id="skin.estuary-mod" version="3.0.15" name="Estuary-mod" provider-name="phil65, Ichabod Fletchman, yosubis">
+<addon id="skin.estuary-mod" version="3.0.16" name="Estuary-mod" provider-name="phil65, Ichabod Fletchman, yosubis">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
 	</requires>
