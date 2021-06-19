@@ -376,7 +376,7 @@
     </extension>
 </addon>
 
-<addon id="skin.estuary" version="3.0.10" name="Estuary" provider-name="phil65, Ichabod Fletchman, yosubis">
+<addon id="skin.estuary-mod" version="3.0.11" name="Estuary-mod" provider-name="phil65, Ichabod Fletchman, yosubis">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
 	</requires>
@@ -538,7 +538,7 @@
 		<platform>all</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
 		<forum>http://forum.kodi.tv/</forum>
-		<source>https://github.com/xbmc/skin.estuary/</source>
+		<source>https://github.com/yosubis/skin.estuary-mod</source>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
