@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary-mod" version="3.0.11" name="Estuary-mod" provider-name="phil65, Ichabod Fletchman, yosubis">
+<addon id="skin.estuary-mod" version="3.0.12" name="Estuary-mod" provider-name="phil65, Ichabod Fletchman, yosubis">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
 	</requires>
