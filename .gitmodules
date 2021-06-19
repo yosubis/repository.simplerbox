@@ -1,0 +1,4 @@
+[submodule "matrix/skin.estuary-mod"]
+	path = matrix/skin.estuary-mod
+	url = https://github.com/yosubis/skin.estuary-mod
+	branch = matrix
