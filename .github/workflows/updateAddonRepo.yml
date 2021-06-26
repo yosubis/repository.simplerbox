@@ -29,7 +29,6 @@ jobs:
       
       - name: update submodule branch
         run: |
-      #     git config --file=.gitmodules submodule.Submod.branch B1  # change branch to 'B1' branch
            git submodule sync                        # sync
            git submodule update --init --recursive --remote   # pull the submodule
       - name: checkout submodule matrix branch
