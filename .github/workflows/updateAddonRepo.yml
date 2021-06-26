@@ -27,14 +27,14 @@ jobs:
           token: ${{ secrets.CI }}
           submodules: recursive
           
-      - name: Git Sumbodule Update
-        run: |
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
+      #- name: Git Sumbodule Update
+      #  run: |
+      #    git pull --recurse-submodules
+      #    git submodule update --remote --recursive
 
       # Runs a single command using the runners shell
-      - name: Updated repo data
-        run: python3 _repo_generator.py
+      #- name: Updated repo data
+      #  run: python3 _repo_generator.py
         
       - name: Commit update
         run: |
