@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.CI_TOKEN }}
+          token: ${{ secrets.CI }}
           submodules: recursive
           
       - name: Git Sumbodule Update
@@ -33,5 +33,12 @@ jobs:
           git submodule update --remote --recursive
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Updated repo data
         run: python3 _repo_generator.py
+        
+      - name: Commit update
+        run: |
+          git config --global user.name 'Git bot'
+          git config --global user.email 'bot@noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git commit -am "Auto updated submodule references" && git push
