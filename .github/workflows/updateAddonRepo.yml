@@ -24,11 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-        #  token: ${{ secrets.CI }}
+          token: ${{ secrets.CI }}
           submodules: recursive
-          
-      - name: Git Sumbodule Update
-        run: git submodule update --remote
+      
+      - name: update submodule branch
+        run: |
+      #     git config --file=.gitmodules submodule.Submod.branch B1  # change branch to 'B1' branch
+           git submodule sync                        # sync
+           git submodule update --init --recursive --remote   # pull the submodule
+      - name: checkout submodule matrix branch
+        run: |
+          cd matrix/skin.estuary-mod    # go to submodule repo
+          git checkout -b matrix origin/matrix   # checkout the target branch.
+
+      #- name: Git Sumbodule Update
+      #  run: git submodule update --remote
       #- name: Git Submodule Update --matrix
       #  run: |
       #    git submodule update --init --recursive
