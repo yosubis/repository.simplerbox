@@ -34,6 +34,7 @@ jobs:
       - name: Git Submodule Update --matrix
         run: |
           ls
+          ls matrix
           cd matrix
           cd skin.estuary-mod
           git checkout matrix
