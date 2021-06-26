@@ -33,7 +33,9 @@ jobs:
       #    git submodule update --remote --recursive
       - name: Git Submodule Update --matrix
         run: |
-          cd matrix/skin.estuary-mod
+          ls
+          cd matrix
+          cd skin.estuary-mod
           git checkout matrix
           git pull
       #    git submodule update --init --recursive
