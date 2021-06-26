@@ -23,9 +23,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
-        #with:
+        with:
         #  token: ${{ secrets.CI }}
-        #  submodules: recursive
+          submodules: recursive
           
       - name: Git Sumbodule Update
         run: |
